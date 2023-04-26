@@ -1,11 +1,11 @@
 body{
-    /*background-color: #ff90dc !important;*/
-    background-image: url(../image/new2.jpg)!important;
+    background-color: #ffffff !important;
+    /*background-image: url(../image/new2.jpg)!important;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
-
+    transition: 350ms ease-in-out;
 }
 .color-white{
     color:white
@@ -149,11 +149,35 @@ body{
     cursor: pointer;
     position: relative;
 }
-
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    color: #959987;
+    
+}
 /*.list-contact {
     width: 40px;
     height: 40px;
 }*/
+
+/*mode dark*/
+[data-theme="light"] {
+    --gradient-one: #30cfd0;
+    --gradient-two: #330867;
+    --bg-color: #ffffff;
+    --links: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --gradient-one: rgba(245, 107, 244, 0.79);
+    --gradient-two: #efad05;
+    --bg-color: #21232f;
+    --links: #FFFFFF;
+  }
 
 
 
