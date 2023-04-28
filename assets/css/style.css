@@ -96,7 +96,7 @@ body{
     margin-bottom: 10px;
   }
 a{text-decoration: none; color: #fff;}
-a:hover{color: #8983be;}
+a:hover{color: #ffffff;}
 @keyframes showNav {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -131,11 +131,11 @@ a:hover{color: #8983be;}
 .logo {
     position: absolute;
     right: 25px;
-    top: 80px;
+    top: 30px;
     cursor: pointer;
-    color: #000;
+    color: #fff;
     width: auto;
-    border: 3px solid #000;
+    border: 3px solid #fff;
     border-radius: 50%;
     padding: 6px 10px;
 }
