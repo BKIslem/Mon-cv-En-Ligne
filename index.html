@@ -4,27 +4,32 @@
     <!--<meta charset="UTF-8" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>curriculum vitae</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" >
-    <link href="assets/css/bootstrap.css" rel="stylesheet" >
-    <link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet" >
-    <!--<script src="assets/js/script.js" defer> </script>-->
     <script src="https://use.fontawesome.com/02c97cb079.js"></script>
+    <script src="assets/js/script.js" defer> </script>
     </head>
   
-  <body data-theme="light">
-    <div class="container">
+  <body data-theme="light" id="id-body">
+    <div class="container  mt-3">
         <div class="row justify-content-center">
+          <a href="#" onclick="ModeDark()" id="btn-dark" class="logo">
+            <i class="fa fa-moon-o fa-3x" aria-hidden="true"></i>
+          </a>
+          <a href="#" onclick="ModeDark()" id="btn-clair" class="logo">
+            <i class="fa fa-sun-o fa-3x s" aria-hidden="true"></i></a>
           <div class="col-md-5">
             <div class="element-left">
               <div class="element-img text-center">
-                <img class="img-profil" src="assets/image/IMG_9796.jpg" alt="Devloppeur web">
+                <img class="img-profil mt-5" src="assets/image/IMG_9796.jpg" alt="Devloppeur web">
+                <!--<img class="img-logo light" src="assets/image/backgroundcv2.jpg" alt="Devloppeur web">-->
               </div>
               <div class="element-profil">
-                <h2 class="title color-white p-10">
+                <h2 class="title color-wl p-10">
                   Profil
                 </h2>
-                <hr class="color-white">
-                <p class="disc color-white p-10">
+                <hr class="color-wl">
+                <p class="disc color-wl p-10">
                   Bien que débutant dans ce nouveaux
                   métier, je suis prêt à en apprendre,
                   et à parfaire mon expérience. j’ai su
@@ -34,11 +39,11 @@
                 </p>
               </div>
               <div class="element-hard-skill">
-                <h2 class="title color-white p-10">
+                <h2 class="title color-wl p-10">
                    Hard Skills
                 </h2>
-                <hr class="color-white">
-                <ul class="color-white p-10">
+                <hr class="color-wl">
+                <ul class="color-wl p-10">
                   <li> HTML </li>
                   <li>CSS</li>
                   <li>SQL</li>
@@ -50,11 +55,11 @@
                 </ul>
               </div>
               <div class="element-Soft-skill">
-                <h2 class="title color-white p-10">
+                <h2 class="title color-wl p-10">
                   Soft Skills
                 </h2>
-                <hr class="color-white">
-                <ul class="color-white p-10">
+                <hr class="color-wl">
+                <ul class="color-wl p-10">
                   <li>Travail en equipe </li>
                   <li>Autodidacte </li>
                   <li>Curieux </li>
@@ -62,10 +67,10 @@
                 </ul>
               </div>
               <div class="langue">
-                <h2 class="title color-white p-10">
+                <h2 class="title color-wl p-10">
                     Langues</h2>
-                <hr class="color-white">
-                <ul class="color-white p-10">
+                <hr class="color-wl">
+                <ul class="color-wl p-10">
                   <li>Arabe :Langue Maturnelle</li>
                     <li>Français :B1</li>
                     <li>Anglais :B2</li>
@@ -75,19 +80,19 @@
         </div>
           <div class="col-md-7 ">
             <div class="element-right p-3">
-              <div class="title-cv color-white">
-                <h2>Ben Khaled Islèm</h2>
-                <h5>DÉVLOPPEUR WEB ET WEB MOBILE</h5>
+              <div class="title-cv color-bl">
+                <h1 class="color-wl">Ben Khaled Islèm</h1>
+                <h3 class="color-wl">DÉVLOPPEUR WEB ET WEB MOBILE</h3>
               </div>
-              <div class="experiences color-beige">
+              <div class="experiences color-bl padding-pl">
                 <h2> EXPERIENCES </h2>
-                <hr class="color-beige">
+                <hr class="color-bl">
                 <h3> Technicien Supérieur en biomédical</h3>
-                <h6>Clinique La Concorde | Mais 2021 - mars2022 </h6>
+                <h6>Clinique La Concorde | Mais 2021 - mars 2022 </h6>
               </div>
-             <div class="stages color-beige">
+             <div class="stages color-bl padding-pl">
                 <h1> STAGES </h1>
-                <hr class="color-beige">
+                <hr class="color-bl">
                 <h3> Technicien Supérieur en technologies numériques</h3>
                 <h6>Firnas Engineering | Mars 2020 - novembre 2020 </h6>
                <ul>
@@ -97,9 +102,9 @@
                 <li>Différentiel et l’essaie de trouver des solutions.</li>
                </ul>
              </div>
-             <div class="formation color-beige">
+             <div class="formation color-bl padding-pl">
                 <h2> FORMATIONS </h2>
-                <hr class="color-beige">
+                <hr class="color-bl">
                 <h6> Centre de Formation Simplon Boulogne Sur Mer</h6>
                 <h4> <b>Titre Professionnel En Devloppeur Web et Mobile</b></h4>
                 <h6> Institus Supérieur De technologies Médical De Tunis </h6>
@@ -114,22 +119,23 @@
 
             </div>
           </div>
-          <div class="Contact color-beige">
+          <div class="Contact color-wl">
             <ul class="list-contact">  
-            <li><i class="fa fa-phone ff fa-shake" aria-hidden="true" style="--fa-beat-scale: 2.0;"></i></li>
-            <li><i class="fa fa-envelope ff" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin-square ff" aria-hidden="true"></i></li>
-            <li><i class="fa fa-github ff" aria-hidden="true"></i></li>
-            <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+            <li><a href="#" class="tooltips"><span class="tooltiptexts">text</span><i class="fa fa-phone ff fa-shake" aria-hidden="true" style="--fa-beat-scale: 2.0;"></i></a></li>
+            <li><a href="mailto: abc@example.com" target="_blank"><i class="fa fa-envelope ff" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/islem-ben-khaled-aa0946120" target="_blank"><i class="fa fa-linkedin-square ff" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-github ff" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
            </ul>
          </div>
-         <p><i class="fa fa-moon-o fa-3x logo" aria-hidden="true"></i></p>
+       
         </div>
     
     <footer>
-        <p class="copyright color-beige">Ben khlaed Islem © 2023</p>
+        <p class="copyright color-bl">Made with &#10084 Ben khlaed Islem © 2023</p>
     </footer>
     </div>
+  
  </body>
  
 </html>

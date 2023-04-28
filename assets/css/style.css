@@ -1,13 +1,13 @@
 body{
-    background-color: #ffffff !important;
-    /*background-image: url(../image/new2.jpg)!important;*/
+    /*background-color: #ffffff !important;*/
+    background-image: url(../image/wallpaperbetter.com_2560x1440.jpg)!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
     transition: 350ms ease-in-out;
 }
-.color-white{
+.color-wl{
     color:white
 }
 .p-10{
@@ -48,18 +48,19 @@ body{
 
 
 .element-left{
-    background-color: #959987;
+    background-color:#7871b4de;
 }
 .element-right{
     background-color: #fff;
 }
+.element-right, .element-left{min-height: 100%;}
 .title{
     justify-content: center;
 }
 .title-cv{
-    background-color: #e6e5dc;
+    background-color:#7871b4de;
     text-align: center;
-   
+    padding: 40px 10px;
 }
 
 
@@ -71,8 +72,13 @@ body{
 .p-3{
     padding: 3px 3px !important;
 }
-.color-beige{
-    color: #959987;
+.color-bl{
+    color: #9a9fb5;
+    
+}
+.padding-pl{
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 
@@ -84,64 +90,37 @@ body{
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
+    font-style: italic;
+    text-shadow: #0000004f;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
-
-
-
-  /*les petit ecran*/
-  @media screen and (max-width: 767px) {
-    .list-contact {
-    color:#e6e5dc;
-    list-style-type: none;
-    position:fixed;
-    right:12% !important;
-    top: 15% !important;
-    border-style:none;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-size: auto !important;
-    width: 20px;
-    height: auto;
-
-        }
- }
-
-  /*les Grands ecrans*/
-  @media screen and (min-width: 1440px) {
-    .list-contact {
-    list-style-type: none;
-    position:fixed;
-    right:5% !important;
-    top: 10% !important;
-    border-style:none;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px !important;
-    width: 20px;
-    height: auto;
-
-        }
- }
-
-
-
-  
+a{text-decoration: none; color: #fff;}
+a:hover{color: #8983be;}
+@keyframes showNav {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.list-contact {display: none;}
 .list-contact {
+   
+    animation: showNav 3000ms ease-in-out backwards;
+    display: inline-block;
+    text-align: center;
     list-style-type: none;
     position:fixed;
-    right:5%;
-    top: 10%;
+    right:20px;
+    top: 50%;
+    transform: translate(0px, -50%);
     border-style:none;
-    display: inline-block;
     justify-content: center;
     align-items: center;
-    /*flex-direction: column;*/
      font-size: 20px;
-     width: 40px;
-     height: auto;
-     padding: 5% 5%;
+   
+     padding: 5px 10px;
+     border-radius: 5px;
+    background-color: #0000004f;
+
 
     }
 .ff {
@@ -151,33 +130,83 @@ body{
 }
 .logo {
     position: absolute;
-    right: 2.9%;
-    top: 4%;
-    width: 80px;
-    height: 80px;
+    right: 25px;
+    top: 80px;
     cursor: pointer;
-    color: #959987;
-    
+    color: #000;
+    width: auto;
+    border: 3px solid #000;
+    border-radius: 50%;
+    padding: 6px 10px;
 }
-/*.list-contact {
-    width: 40px;
-    height: 40px;
-}*/
+#btn-clair{
+display: none !important;
+color: #000;
+}
+.container-lg, .container-md, .container-sm, .container{max-width: 100% !important;}
 
-/*mode dark*/
-[data-theme="light"] {
-    --gradient-one: #30cfd0;
-    --gradient-two: #330867;
-    --bg-color: #ffffff;
-    --links: #000000;
+/*dark*/
+.dark{background-image: url(../image/wallpaperbetter.com_1024x600.jpg)!important;}
+.dark .element-left {
+    background-color: #9aa1a9;
+}
+.dark .title-cv {
+    background-color: #9aa1a9;
+}
+.dark .color-wl{
+   color: #000;
+}
+.dark .element-right {
+    background-color: #000;
+}
+.dark .color-bl {
+    color: #9aa1a9;
+}
+.dark .list-contact {
+    background-color: #9aa1a9;
+}
+.dark #btn-dark{display: none;} /*moon desparee*/
+.dark #btn-clair{display: block !important;} /*sun appareitre*/
+.tooltips {
+    position: relative;
+    display: inline-block;
+  }
+  .dark a:hover{color: #8983be;}
+  
+  .tooltips .tooltiptexts {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8983be;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -17%;
+    left: 50%;
+    margin-left: -160px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
-  [data-theme="dark"] {
-    --gradient-one: rgba(245, 107, 244, 0.79);
-    --gradient-two: #efad05;
-    --bg-color: #21232f;
-    --links: #FFFFFF;
+  .tooltips .tooltiptexts::after {
+    content: "";
+    position: absolute;
+    top: 41%;
+    left: 104%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #8983be transparent transparent transparent;
+    transform: rotate(266deg);
   }
+  
+  .tooltips:hover .tooltiptexts {
+    visibility: visible;
+    opacity: 1;
+  }
+
 
 
 
