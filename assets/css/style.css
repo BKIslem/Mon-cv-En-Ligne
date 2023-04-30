@@ -175,8 +175,13 @@ background-attachment: fixed;}
     display: inline-block;
   }
   .dark a:hover{color: #8983be;}
+  .dark .logo {
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 50%;
+    padding: 6px 8px;}
   
-  .tooltips .tooltiptexts {
+  .tooltips .tooltiptexts  {
     visibility: hidden;
     width: 120px;
     background-color: #8983be;
