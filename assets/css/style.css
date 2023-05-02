@@ -55,6 +55,8 @@ body{
     padding: 10px 10%;
 }
 .img-profil{
+    width:"80%";
+    height:"auto" ;
     box-sizing: border-box;
     border: 5px white solid;
     border-radius: 50%;
