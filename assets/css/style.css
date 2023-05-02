@@ -54,11 +54,7 @@ body{
 .p-10{
     padding: 10px 10%;
 }
-.img-profil{
-    max-width: 80%;
-    height: auto;
-
-
+.img-profil img{
     box-sizing: border-box;
     border: 5px white solid;
     border-radius: 50%;
