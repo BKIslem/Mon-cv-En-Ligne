@@ -1,5 +1,5 @@
 body{
-    background-image: url(../image/wallpaperbetter.com_2560x1440.jpg)!important;
+    background-image: url(../image/wallpaperbetter.com_2560x1440.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -187,7 +187,7 @@ color: #000;
 .container-lg, .container-md, .container-sm, .container{max-width: 100% !important;}
 
 /*dark*/
-.dark{background-image: url(../image/wallpaperbetter.com_1024x600.jpg)!important;
+.dark{background-image: url(../image/wallpaperbetter.com_1024x600.webp)!important;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;}
@@ -209,8 +209,8 @@ background-attachment: fixed;}
 .dark .list-contact {
     background-color: #9aa1a9;
 }
-.dark #btn-dark{display: none;} /*moon desparee*/
-.dark #btn-clair{display: block !important;} /*sun appareitre*/
+.dark #btn-dark{display: none;} /*disappear moon*/
+.dark #btn-clair{display: block !important;} /*show sun */
 .tooltips {
     position: relative;
     display: inline-block;
@@ -224,17 +224,17 @@ background-attachment: fixed;}
   
   .tooltips .tooltiptexts  {
     visibility: hidden;
-    width: 120px;
+    width: 140px;
     background-color: #8983be;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding:0px;
     position: absolute;
     z-index: 1;
     bottom: -17%;
     left: 50%;
-    margin-left: -160px;
+    margin-left: -170px;
     opacity: 0;
     transition: opacity 0.3s;
   }
