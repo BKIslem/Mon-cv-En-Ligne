@@ -55,7 +55,7 @@ body{
     padding: 10px 10%;
 }
 .img-profil{
-    width: 80%;
+    max-width: 80%;
     height: auto;
 
 
