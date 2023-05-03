@@ -127,22 +127,17 @@ body{
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    color:#54067d;
     margin-bottom:0;
     font-style: italic;
-    text-shadow: #0000004f;
+    text-shadow: #0000004f !important;
     font-weight: 700;
     margin-bottom: 10px;
   }
 a{text-decoration: none; color: #fff;}
 a:hover{color: #ffffff;}
-@keyframes showNav {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
 .list-contact {display: none;}
 .list-contact {
-   
     animation: showNav 3000ms ease-in-out backwards;
     display: inline-block;
     text-align: center;
@@ -154,7 +149,7 @@ a:hover{color: #ffffff;}
     border-style:none;
     justify-content: center;
     align-items: center;
-     font-size: 20px;
+    font-size: 20px;
    
      padding: 5px 10px;
      border-radius: 5px;
@@ -162,11 +157,11 @@ a:hover{color: #ffffff;}
 
 
     }
-.ff {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-}
+    @keyframes showNav {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
 .logo {
     position: absolute;
     right: 20px;
@@ -219,6 +214,9 @@ background-attachment: fixed;}
     border: 3px solid #000;
     border-radius: 50%;
     padding: 6px 8px;}
+    .dark .tooltips .tooltiptexts{
+      background-color: #1f1f2075; 
+    }
   
   .tooltips .tooltiptexts  {
     visibility: hidden;
