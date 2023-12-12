@@ -7,6 +7,7 @@ body{
 
     
 }
+
 .ma{
   animation: shake 0.5s infinite;
     }
@@ -55,18 +56,16 @@ body{
     padding: 10px 10%;
 }
 .img-profil{
-    width:80%;
-    height:auto;
+    width:70%;
+    height:60%;
     box-sizing: border-box;
     border: 5px white solid;
     border-radius: 50%;
-   
     box-shadow: 0 5px 15px 0px ;
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
 
 }
-
 
 @keyframes float {
     0% {
@@ -82,9 +81,6 @@ body{
       transform: translatey(0px);
     }
   }
-  
-
-
 
 .element-left{
     background-color:#7871b4de;
@@ -102,12 +98,6 @@ body{
     padding: 40px 10px;
 }
 
-
-
-
-
-
-
 .p-3{
     padding: 3px 3px !important;
 }
@@ -119,9 +109,6 @@ body{
     padding-left: 10px;
     padding-top: 10px;
 }
-
-
-
 
 .copyright {
     margin-top:15px;
